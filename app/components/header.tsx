@@ -11,7 +11,7 @@ export default function Header() {
         <Toolbar>
           <Image
             className="m-5"
-            src="/flcLogo.jpg"
+            src="/FlcLogo.jpg"
             alt="FLC Logo"
             width={50}
             height={50}
