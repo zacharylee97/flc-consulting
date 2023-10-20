@@ -1,13 +1,12 @@
-import Image from "next/image";
 import Header from "./components/header";
+import { Typography } from "@mui/material";
 
 export default function Home() {
+  const slogan = "If you can dream it, we can build it!";
   return (
     <main className="min-h-screen">
       <Header></Header>
-      <div className="flex justify-center m-5">
-        <Image src="/optima1.jpg" alt="Optima 1" width={500} height={50} />
-      </div>
+      <Typography variant="h3">{slogan}</Typography>
     </main>
   );
 }
