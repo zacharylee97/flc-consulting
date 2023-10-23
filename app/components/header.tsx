@@ -1,15 +1,18 @@
-import { Box, AppBar, Toolbar, Typography, Button } from "@mui/material";
+"use client";
+import { Box, AppBar, Toolbar, Typography } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 import Image from "next/image";
 import Link from "next/link";
 
 const companyName = "FLC Consulting";
-const pages = ["Projects", "Contact Us"];
-const links = ["/projects", "contactUs"];
+const pages = ["Projects"];
+const links = ["/projects"];
 
 export default function Header() {
+  const theme = useTheme();
   return (
     <Box>
-      <AppBar position="static">
+      <AppBar position="fixed" sx={{ zIndex: theme.zIndex.drawer + 1 }}>
         <Toolbar>
           <Image
             className="m-5"
