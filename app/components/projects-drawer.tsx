@@ -20,6 +20,7 @@ const pages = [
   "Residential Construction - Rocky Ridge",
   "Korea Plaza",
   "Loring Tarcore Laboratory",
+  "Thai Nongkai Restaurant",
 ];
 const links = [
   "/projects/optima",
@@ -29,6 +30,7 @@ const links = [
   "/projects/rocky-ridge",
   "/projects/korea-plaza",
   "/projects/loring-tarcore",
+  "/projects/thai-nongkai",
 ];
 
 export default function ProjectsDrawer() {
