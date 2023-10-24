@@ -1,48 +1,16 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-import Drawer from "@mui/material/Drawer";
-import CssBaseline from "@mui/material/CssBaseline";
-import List from "@mui/material/List";
 import Typography from "@mui/material/Typography";
-import Divider from "@mui/material/Divider";
-import ListItem from "@mui/material/ListItem";
 import Header from "@/app/components/header";
 import Image from "next/image";
-import Link from "next/link";
+import ProjectsDrawer from "@/app/components/projects-drawer";
 
-const drawerWidth = 240;
-
-export default function ClippedDrawer() {
+export default function Optima() {
   return (
     <main className="min-h-screen">
       <Header></Header>
       <Box sx={{ display: "flex", "margin-top": "100px" }}>
-        <CssBaseline />
-        <Drawer
-          variant="permanent"
-          sx={{
-            width: drawerWidth,
-            flexShrink: 0,
-            [`& .MuiDrawer-paper`]: {
-              width: drawerWidth,
-              boxSizing: "border-box",
-              "margin-top": "100px",
-            },
-          }}
-        >
-          <Box sx={{ overflow: "auto" }}>
-            <List>
-              <ListItem key={"optima"} disablePadding>
-                <Link href="/projects/optima">
-                  <Typography variant="h5" className="m-5" textAlign="center">
-                    {"Optima"}
-                  </Typography>
-                </Link>
-              </ListItem>
-              <Divider />
-            </List>
-          </Box>
-        </Drawer>
+        <ProjectsDrawer></ProjectsDrawer>
         <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
           <Typography variant="h1" className="m-5">
             {"Optima"}
