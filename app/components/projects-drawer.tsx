@@ -17,12 +17,14 @@ const pages = [
   "Paul Teoh Chartered Accountant",
   "Dah Shin International Food Processing",
   "Hertz Car Rentail - Avendia Centre",
+  "Residential Construction - Rocky Ridge",
 ];
 const links = [
   "/projects/optima",
   "/projects/paul-teoh",
   "/projects/dah-shin",
   "/projects/hertz-avendia",
+  "/projects/rocky-ridge",
 ];
 
 export default function ProjectsDrawer() {
