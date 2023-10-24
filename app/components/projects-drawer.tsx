@@ -16,8 +16,14 @@ const pages = [
   "Optima",
   "Paul Teoh Chartered Accountant",
   "Dah Shin International Food Processing",
+  "Hertz Car Rentail - Avendia Centre",
 ];
-const links = ["/projects/optima", "/projects/paul-teoh", "/projects/dah-shin"];
+const links = [
+  "/projects/optima",
+  "/projects/paul-teoh",
+  "/projects/dah-shin",
+  "/projects/hertz-avendia",
+];
 
 export default function ProjectsDrawer() {
   const pathname = usePathname();
@@ -42,7 +48,7 @@ export default function ProjectsDrawer() {
                 <Link href={links[index]}>
                   <Typography
                     variant="h5"
-                    className={`m-5 ${
+                    className={`${
                       pathname === links[index] ? "font-bold" : ""
                     }`}
                   >
