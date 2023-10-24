@@ -18,6 +18,7 @@ const pages = [
   "Dah Shin International Food Processing",
   "Hertz Car Rentail - Avendia Centre",
   "Residential Construction - Rocky Ridge",
+  "Korea Plaza",
 ];
 const links = [
   "/projects/optima",
@@ -25,6 +26,7 @@ const links = [
   "/projects/dah-shin",
   "/projects/hertz-avendia",
   "/projects/rocky-ridge",
+  "/projects/korea-plaza",
 ];
 
 export default function ProjectsDrawer() {
