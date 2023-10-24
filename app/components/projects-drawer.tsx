@@ -19,6 +19,7 @@ const pages = [
   "Hertz Car Rentail - Avendia Centre",
   "Residential Construction - Rocky Ridge",
   "Korea Plaza",
+  "Loring Tarcore Laboratory",
 ];
 const links = [
   "/projects/optima",
@@ -27,6 +28,7 @@ const links = [
   "/projects/hertz-avendia",
   "/projects/rocky-ridge",
   "/projects/korea-plaza",
+  "/projects/loring-tarcore",
 ];
 
 export default function ProjectsDrawer() {
