@@ -12,8 +12,12 @@ import { usePathname } from "next/navigation";
 
 const drawerWidth = 240;
 
-const pages = ["Optima", "Paul Teoh"];
-const links = ["/projects/optima", "/projects/paul-teoh"];
+const pages = [
+  "Optima",
+  "Paul Teoh Chartered Accountant",
+  "Dah Shin International Food Processing",
+];
+const links = ["/projects/optima", "/projects/paul-teoh", "/projects/dah-shin"];
 
 export default function ProjectsDrawer() {
   const pathname = usePathname();
@@ -26,7 +30,7 @@ export default function ProjectsDrawer() {
         [`& .MuiDrawer-paper`]: {
           width: drawerWidth,
           boxSizing: "border-box",
-          "margin-top": "100px",
+          marginTop: "100px",
         },
       }}
     >

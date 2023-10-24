@@ -5,7 +5,7 @@ import Header from "@/app/components/header";
 import Image from "next/image";
 import ProjectsDrawer from "@/app/components/projects-drawer";
 
-export default function PaulTeoh() {
+export default function DahShin() {
   return (
     <main className="min-h-screen">
       <Header></Header>
@@ -13,18 +13,18 @@ export default function PaulTeoh() {
         <ProjectsDrawer></ProjectsDrawer>
         <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
           <Typography variant="h1" className="m-5">
-            {"Paul Teoh Chartered Accountant"}
+            {"Dah Shin International Food Processing"}
           </Typography>
           <Box>
             <Image
-              src="/PaulTeoh1.png"
-              alt="Paul Teoh 1"
+              src="/DahShin1.png"
+              alt="DahShin 1"
               width={500}
               height={50}
             />
             <Image
-              src="/PaulTeoh2.png"
-              alt="Paul Teoh 2"
+              src="/DahShin2.png"
+              alt="DahShin 2"
               width={500}
               height={50}
             />

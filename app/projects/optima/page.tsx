@@ -9,7 +9,7 @@ export default function Optima() {
   return (
     <main className="min-h-screen">
       <Header></Header>
-      <Box sx={{ display: "flex", "margin-top": "100px" }}>
+      <Box sx={{ display: "flex", marginTop: "100px" }}>
         <ProjectsDrawer></ProjectsDrawer>
         <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
           <Typography variant="h1" className="m-5">

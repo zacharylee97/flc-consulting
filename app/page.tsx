@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <Header></Header>
-      <Box sx={{ display: "flex", "margin-top": "100px" }}>
+      <Box sx={{ display: "flex", marginTop: "100px" }}>
         <Typography variant="h3">{slogan}</Typography>
       </Box>
     </main>
