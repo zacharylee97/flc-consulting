@@ -6,9 +6,14 @@ import {
   Drawer,
   List,
   ListItem,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+  Toolbar,
 } from "@mui/material";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import CssBaseline from "@mui/material/CssBaseline";
 
 const drawerWidth = 240;
 
@@ -44,11 +49,14 @@ export default function ProjectsDrawer() {
         [`& .MuiDrawer-paper`]: {
           width: drawerWidth,
           boxSizing: "border-box",
-          marginTop: "100px",
+          [`& .MuiToolbar-root`]: {
+            minHeight: "100px",
+          },
         },
       }}
     >
-      <Box sx={{ overflow: "auto" }}>
+      <Toolbar />
+      <Box>
         <List>
           {pages.map((page, index) => (
             <Box key={page}>
