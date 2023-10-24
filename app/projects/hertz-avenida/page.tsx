@@ -5,7 +5,7 @@ import Header from "@/app/components/header";
 import Image from "next/image";
 import ProjectsDrawer from "@/app/components/projects-drawer";
 
-export default function HertzAvendia() {
+export default function HertzAvenida() {
   return (
     <main className="min-h-screen">
       <Header></Header>
@@ -13,18 +13,18 @@ export default function HertzAvendia() {
         <ProjectsDrawer></ProjectsDrawer>
         <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
           <Typography variant="h1" className="m-5">
-            {"Hertz Car Rentail - Avendia Centre"}
+            {"Hertz Car Rental - Avenida Centre"}
           </Typography>
           <Box>
             <Image
-              src="/HertzAvendia1.png"
-              alt="Hertz Avendia 1"
+              src="/HertzAvenida1.png"
+              alt="Hertz Avenida 1"
               width={500}
               height={50}
             />
             <Image
-              src="/HertzAvendia2.png"
-              alt="Hertz Avendia 2"
+              src="/HertzAvenida2.png"
+              alt="Hertz Avenida 2"
               width={500}
               height={50}
             />
