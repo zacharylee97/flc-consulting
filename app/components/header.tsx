@@ -1,13 +1,5 @@
 "use client";
-import {
-  Box,
-  AppBar,
-  Toolbar,
-  Typography,
-  Button,
-  Menu,
-  MenuItem,
-} from "@mui/material";
+import { Box, AppBar, Toolbar, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import Image from "next/image";
 import Link from "next/link";
