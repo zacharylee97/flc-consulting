@@ -34,6 +34,24 @@ const designAndEngineeringMenuItems: MenuItems[] = [
     link: "/design-and-engineering/electrical",
   },
 ];
+const projectManagementMenuItems: MenuItems[] = [
+  {
+    title: "Commercial",
+    link: "/project-management/commercial",
+  },
+  {
+    title: "Tenant Improvement",
+    link: "/project-management/tenant-improvement",
+  },
+  {
+    title: "Industrial",
+    link: "/project-management/industrial",
+  },
+  {
+    title: "Residential",
+    link: "/project-management/residential",
+  },
+];
 
 export default function Header() {
   const theme = useTheme();
@@ -56,6 +74,10 @@ export default function Header() {
           <Dropdown
             title="Design & Engineering"
             menuItems={designAndEngineeringMenuItems}
+          ></Dropdown>
+          <Dropdown
+            title="Project Management"
+            menuItems={projectManagementMenuItems}
           ></Dropdown>
         </Toolbar>
       </AppBar>
