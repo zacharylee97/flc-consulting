@@ -1,12 +1,39 @@
 "use client";
-import { Box, AppBar, Toolbar, Typography } from "@mui/material";
+import {
+  Box,
+  AppBar,
+  Toolbar,
+  Typography,
+  Button,
+  Menu,
+  MenuItem,
+} from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
+import Dropdown from "./dropdown";
+import { MenuItems } from "../interfaces/dropdown-props";
 
 const companyName = "FLC Consulting";
-const pages = ["Projects"];
-const links = ["/projects"];
+const designAndEngineeringMenuItems: MenuItems[] = [
+  {
+    title: "Architectural",
+    link: "/design-and-engineering/architectural",
+  },
+  {
+    title: "Structural",
+    link: "/design-and-engineering/structural",
+  },
+  {
+    title: "Mechanical",
+    link: "/design-and-engineering/mechanical",
+  },
+  {
+    title: "Electrical",
+    link: "/design-and-engineering/electrical",
+  },
+];
 
 export default function Header() {
   const theme = useTheme();
@@ -26,16 +53,10 @@ export default function Header() {
               {companyName}
             </Typography>
           </Link>
-          <Box
-            className="m-5"
-            sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
-          >
-            {pages.map((page, index) => (
-              <Link key={page} href={links[index]} className="m-5">
-                {page}
-              </Link>
-            ))}
-          </Box>
+          <Dropdown
+            title="Design & Engineering"
+            menuItems={designAndEngineeringMenuItems}
+          ></Dropdown>
         </Toolbar>
       </AppBar>
     </Box>
