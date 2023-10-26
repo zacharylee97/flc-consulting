@@ -79,6 +79,9 @@ export default function Header() {
             title="Project Management"
             menuItems={projectManagementMenuItems}
           ></Dropdown>
+          <Link href="/contact-us" className="m-5 uppercase">
+            Contact Us
+          </Link>
         </Toolbar>
       </AppBar>
     </Box>
