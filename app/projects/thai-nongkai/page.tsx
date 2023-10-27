@@ -9,9 +9,9 @@ export default function ThaiNongkai() {
   return (
     <main className="min-h-screen">
       <Header></Header>
-      <Box sx={{ display: "flex", marginTop: "100px" }}>
+      <Box className="flex mt-96">
         <ProjectsDrawer></ProjectsDrawer>
-        <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
+        <Box component="main">
           <Typography variant="h1" className="m-5">
             {"Thai Nongkai Restaurant"}
           </Typography>

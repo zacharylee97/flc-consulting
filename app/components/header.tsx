@@ -59,7 +59,7 @@ export default function Header() {
             width={80}
             height={80}
           />
-          <Box sx={{ display: "flex", flexDirection: "column" }}>
+          <Box className="flex flex-col">
             <Link href="/">
               <Typography variant="h5" textAlign="center">
                 {companyName}

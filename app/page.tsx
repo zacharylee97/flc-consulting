@@ -38,14 +38,14 @@ export default function Home() {
           className="opacity-25"
         />
       </Box>
-      <Box sx={{ display: "flex", flexDirection: "column", marginTop: "80px" }}>
+      <Box className="flex flex-col mt-96">
         <Typography className="m-10" variant="h3">
           {slogan}
         </Typography>
         <Typography className="m-10" variant="h3">
           About Us
         </Typography>
-        <Typography className="ml-10" variant="h6">
+        <Typography className="mx-10" variant="h6">
           {aboutUsText1}
           <br />
           {aboutUsText2}
