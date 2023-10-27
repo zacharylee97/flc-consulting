@@ -6,12 +6,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "FLC Consulting",
-  description:
-    "FLC Consulting offers a full range of pre-construction" +
-    "and construction services, including evaluation of the preliminary design, " +
-    "overall project evaluation, cost estimates and schedules, evaluation of construction " +
-    "methods, materials and systems, cost effectiveness of programs, cash flow projections, " +
-    "manpower, equipment requirements, purchasing and expediting.",
+  description: `FLC Consulting offers a full range of pre-construction and construction services, 
+  including evaluation of the preliminary design, overall project evaluation, cost estimates and 
+  schedules, evaluation of construction methods, materials and systems, cost effectiveness of 
+  programs, cash flow projections, manpower, equipment requirements, purchasing and expediting.`,
 };
 
 export default function RootLayout({

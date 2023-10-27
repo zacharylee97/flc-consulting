@@ -3,7 +3,6 @@ import Image from "next/image";
 import { Box, Typography } from "@mui/material";
 
 export default function Home() {
-  const slogan = "If you can dream it, we can build it!";
   const aboutUsText1 = `FLC Construction's business methods go beyond the basic services offered by the conventional
   general contractor. We understand the diversities of the traditional formal tender/construct
   approach, as well as the professional design/build, and construction management processes. We
@@ -29,10 +28,14 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <Header></Header>
-      <Box className="flex flex-col mt-20">
-        <Typography className="m-10" variant="h3">
-          {slogan}
-        </Typography>
+      <Box className="flex flex-col mt-28">
+        <Image
+          className="self-center"
+          src="/Slogan.png"
+          alt="Slogan"
+          width={1000}
+          height={500}
+        />
         <Typography className="m-10" variant="h3">
           About Us
         </Typography>
