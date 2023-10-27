@@ -8,6 +8,7 @@ import Dropdown from "./dropdown";
 import { MenuItems } from "../interfaces/dropdown-props";
 
 const companyName = "FLC Consulting";
+const phoneNumber = "403-680-4086";
 const designAndEngineeringMenuItems: MenuItems[] = [
   {
     title: "Architectural",
@@ -55,14 +56,17 @@ export default function Header() {
             className="m-5"
             src="/FlcLogo.jpg"
             alt="FLC Logo"
-            width={50}
-            height={50}
+            width={80}
+            height={80}
           />
-          <Link href="/">
-            <Typography variant="h5" className="m-5" textAlign="center">
-              {companyName}
-            </Typography>
-          </Link>
+          <Box sx={{ display: "flex", flexDirection: "column" }}>
+            <Link href="/">
+              <Typography variant="h5" textAlign="center">
+                {companyName}
+              </Typography>
+            </Link>
+            <Typography variant="subtitle2">{phoneNumber}</Typography>
+          </Box>
           <Dropdown
             title="Design & Engineering"
             menuItems={designAndEngineeringMenuItems}
