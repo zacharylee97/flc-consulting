@@ -30,10 +30,10 @@ export default function Home() {
       <Header></Header>
       <Box className="flex flex-col mt-28">
         <Image
-          className="self-center"
+          className="w-screen self-center"
           src="/Slogan.png"
           alt="Slogan"
-          width={1000}
+          width={500}
           height={500}
         />
         <Typography className="m-10" variant="h3">
