@@ -80,6 +80,10 @@ export default function MobileDrawer({
             <Divider></Divider>
           </Box>
         ))}
+        <Divider></Divider>
+        <Link href="/contact-us" className="flex items-center m-5 uppercase">
+          Contact Us
+        </Link>
       </Box>
     </Drawer>
   );
