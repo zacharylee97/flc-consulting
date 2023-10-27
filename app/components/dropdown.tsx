@@ -8,17 +8,8 @@ export default function Dropdown({ title, menuItems }: DropdownProps) {
   const open = Boolean(anchorEl);
   let menuHover = false;
 
-  const handleButtonHover = (event: React.MouseEvent<HTMLButtonElement>) => {
+  const handleButtonClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
-  };
-
-  const handleMenuHover = () => {
-    menuHover = true;
-  };
-
-  const handleMenuClose = () => {
-    menuHover = false;
-    handleClose();
   };
 
   const handleClose = () => {
@@ -35,7 +26,7 @@ export default function Dropdown({ title, menuItems }: DropdownProps) {
         aria-controls={open ? title : undefined}
         aria-haspopup="true"
         aria-expanded={open ? "true" : undefined}
-        onMouseOver={handleButtonHover}
+        onClick={handleButtonClick}
       >
         {title}
       </Button>
@@ -45,15 +36,8 @@ export default function Dropdown({ title, menuItems }: DropdownProps) {
         open={open}
         onClose={handleClose}
         MenuListProps={{
-          onMouseEnter: handleMenuHover,
-          onMouseLeave: handleMenuClose,
-          style: {
-            display: "flex",
-            flexDirection: "column",
-            pointerEvents: "auto",
-          },
+          "aria-labelledby": title,
         }}
-        anchorOrigin={{ horizontal: "left", vertical: "bottom" }}
       >
         <Divider></Divider>
         {menuItems.map((item) => (
