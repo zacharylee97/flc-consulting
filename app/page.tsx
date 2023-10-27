@@ -29,16 +29,7 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <Header></Header>
-      <Box className="fixed h-screen w-screen overflow-hidden -z-10">
-        <Image
-          src="/Blueprint.jpg"
-          alt="Blueprint"
-          layout="fill"
-          objectFit="cover"
-          className="opacity-25"
-        />
-      </Box>
-      <Box className="flex flex-col mt-96">
+      <Box className="flex flex-col mt-20">
         <Typography className="m-10" variant="h3">
           {slogan}
         </Typography>
