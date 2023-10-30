@@ -6,14 +6,10 @@ import {
   Drawer,
   List,
   ListItem,
-  ListItemButton,
-  ListItemIcon,
-  ListItemText,
   Toolbar,
 } from "@mui/material";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import CssBaseline from "@mui/material/CssBaseline";
 
 const drawerWidth = 240;
 

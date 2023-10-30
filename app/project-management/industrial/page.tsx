@@ -1,5 +1,6 @@
 import Header from "@/app/components/header";
 import { Box, Typography } from "@mui/material";
+import Image from "next/image";
 
 const text = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 Aliquam ipsum risus, dapibus iaculis massa vitae, consectetur mattis dolor. 
@@ -18,6 +19,40 @@ export default function Industrial() {
       </Box>
       <Box className="m-10">
         <Typography variant="h6">{text}</Typography>
+        <Typography className="mt-5" variant="h5">
+          Dah Shin International Food Processing
+        </Typography>
+        <Image
+          className="m-5"
+          src="/DahShin1.png"
+          alt="DahShin1"
+          width={500}
+          height={50}
+        />
+        <Image
+          className="m-5"
+          src="/DahShin2.png"
+          alt="DahShin2"
+          width={500}
+          height={50}
+        />
+        <Typography className="mt-5" variant="h5">
+          Loring Tarcore Laboratory
+        </Typography>
+        <Image
+          className="m-5"
+          src="/LoringTarcore1.png"
+          alt="LoringTarcore1"
+          width={500}
+          height={50}
+        />
+        <Image
+          className="m-5"
+          src="/LoringTarcore2.png"
+          alt="LoringTarcore2"
+          width={500}
+          height={50}
+        />
       </Box>
     </main>
   );
