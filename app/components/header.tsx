@@ -80,7 +80,7 @@ export default function Header() {
             width={80}
             height={80}
           />
-          <Box className="flex flex-col">
+          <Box className="flex flex-col mx-3">
             <Link href="/">
               <Typography variant="h5" textAlign="center">
                 {companyName}
@@ -99,7 +99,7 @@ export default function Header() {
             ></Dropdown>
             <Link
               href="/contact-us"
-              className="flex items-center m-5 uppercase"
+              className="flex items-center m-5 uppercase text-xl"
             >
               Contact Us
             </Link>

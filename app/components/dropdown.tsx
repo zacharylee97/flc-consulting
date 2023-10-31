@@ -20,7 +20,7 @@ export default function Dropdown({ title, menuItems }: DropdownProps) {
     <Box className="flex m-5">
       <Button
         id={title}
-        className="text-white"
+        className="text-white text-xl"
         aria-controls={open ? title : undefined}
         aria-haspopup="true"
         aria-expanded={open ? "true" : undefined}
