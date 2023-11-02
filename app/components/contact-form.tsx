@@ -22,7 +22,7 @@ export default function ContactForm() {
         <input
           type="text"
           placeholder="Full Name"
-          className="w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md"
+          className="w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-blue-500 focus:shadow-md"
           {...register("name", { required: true })}
         />
       </div>
@@ -36,7 +36,7 @@ export default function ContactForm() {
         <input
           type="email"
           placeholder="example@domain.com"
-          className="w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md"
+          className="w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-blue-500 focus:shadow-md"
           {...register("email", { required: true })}
         />
       </div>
@@ -50,7 +50,7 @@ export default function ContactForm() {
         <textarea
           rows={4}
           placeholder="Type your message"
-          className="w-full resize-none rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md"
+          className="w-full resize-none rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-blue-500 focus:shadow-md"
           {...register("message", { required: true })}
         ></textarea>
       </div>
